@@ -1,0 +1,234 @@
+.main__first-link-set {
+  text-decoration: none;
+  color: #111111;
+}
+
+.main__first-link-set__banner {
+  width: 100%;
+  max-height: 35vw;
+  object-fit: cover;
+  vertical-align: baseline;
+  overflow: hidden;
+}
+
+.main__first-link-set__first-paragraph,
+.new-this-week__title {
+  font-family: "Fira Sans", sans-serif;
+  -webkit-transform: scale(0.9, 1.3);
+  -moz-transform: scale(0.9, 1.3);
+  -ms-transform: scale(0.9, 1.3);
+  -o-transform: scale(0.9, 1.3);
+  transform: scale(0.9, 1.3);
+  text-align: center;
+  font-weight: 800;
+  font-size: 3.5em;
+  letter-spacing: -5px;
+  text-transform: uppercase;
+  margin: .4em 0 0.2em 0;
+}
+
+.new-this-week__title {
+  font-size: 2.5em;
+}
+
+.main__first-link-set__second-paragraph {
+  text-align: center;
+}
+
+.main__first-link-set__button,
+.new-this-week__shop-button {
+  background-color: rgb(17, 17, 17);
+  color: white;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 1em;
+  border: none;
+  border-radius: 100vw;
+  padding: .375em 1em;
+  display: block;
+  margin: 1.6em auto;
+  cursor: pointer;
+}
+
+.main__latest-deals__grid > * {
+  margin: 0;
+  padding: 0;
+}
+
+.main__latest-deals__grid {
+  display: grid;
+  column-gap: 0;
+  grid-template-columns: 1fr 1fr;
+}
+
+.main__latest-deals__grid__top-left-grid,
+.main__latest-deals__grid__top-right-grid,
+.main__latest-deals__grid__bottom-left-grid,
+.main__latest-deals__grid__bottom-right-grid
+ {
+  position: relative;
+}
+
+.main__latest-deals__grid__main-link {
+  text-decoration: none;
+}
+
+.main__latest-deals__grid__image {
+  width: 100%;
+  height: 100%;
+}
+
+.main__latest-deals__grid__figcaption {
+  position: absolute;
+  /* bottom: 10%;
+  left: 7%; */
+  inset: auto 0rem 3rem 3rem;
+  /* color: white;   */
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+  color: white;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.main__latest-deals__grid__figcaption__product-title {
+  color: white;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.main__latest-deals__grid__product-description {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.main__latest-deals__grid__shop-button-container {
+  margin-top: 1.125rem;
+  padding: 0 0 0.64em 0;
+}
+
+.main__latest-deals__grid__shop-button {
+  color: black;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 100vh;
+  border: none;
+  background-color: #fff;
+  padding: 0.64em 1.1em;
+}
+
+.main__latest-deals__grid__shop-button:hover {
+  background-color: #ccc;
+}
+
+.main__latest-deals__grid__bottom-left-grid::before,
+.main__latest-deals__grid__top-right-grid::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(in lch,
+    rgba(255, 255, 255, 0.123),
+    rgba(0, 0, 0, 0.144)
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
+.new-this-week__articles {
+  display: grid;
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  margin-bottom: 8rem;
+}
+
+.new-this-week__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.new-this-week__video-container {
+  display: flex;
+}
+
+.new-this-week__video {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-container {
+  padding: 0 38px 0 36px;
+}
+
+.carousel-navigation-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.carousel-icon {
+  height: 1.5rem;
+}
+
+.carousel-arrow-icon-wrapper {
+  border: none;
+  padding: 2em;
+  cursor: pointer;
+}
+
+.icon-container {
+  display: flex;
+  gap: 0px;
+  flex-basis: 8rem;
+  flex-grow: 0;
+  flex-shrink: 0; 
+  justify-content: space-between; 
+  align-items: center;
+}
+
+.carousel-container {
+  background: green;
+}
+
+.carousel__track-container {
+  background: greenyellow;
+  height: 100%;
+  position: relative;
+}
+
+.carousel__track {
+  display: flex;
+  gap: 1.5rem;
+  background-color: blue;
+}
+
+/* .carousel-track {
+  position: absolute;
+} */
+
+/* .carousel__track-container div {
+  scroll-snap-align: start;
+} */
+
+.carousel__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel__slide {
+  /* position: absolute; */
+  top: 0;
+  /* bottom: 0; */
+  width: 100%;
+}
